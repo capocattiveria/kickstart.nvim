@@ -61,7 +61,6 @@ require('lazy').setup({
       },
     },
   },
-  
 
 -- ============================================================================================
 -- |              Plugins with largest configuration are in single file                       |
@@ -74,7 +73,10 @@ require('lazy').setup({
 
   require 'plugins.telescope',
 
-  require 'plugins.lsp_plugins', -- This file contains all the LSP related plugins.
+-- ============================================================================================
+  -- The following module do the magic of the intellisense.
+  require 'plugins.lsp_plugins',
+-- ============================================================================================
 
   --require 'plugins.conform', -- Formatting buffer.
 
@@ -92,7 +94,7 @@ require('lazy').setup({
   require 'plugins.neo-tree',
 
   require('plugins.keymap').setup(),
-}, 
+},
   {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
