@@ -82,7 +82,7 @@ require('lazy').setup({
 
   require 'plugins.colorscheme',
 
-  require 'plugins.which-key', -- Show pending keybinds
+  require 'plugins.which_key', -- Show pending keybinds
 
   require 'plugins.mini', -- Collection of various small independent plugins/modules
 
