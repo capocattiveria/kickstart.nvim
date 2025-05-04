@@ -9,6 +9,7 @@ function keymaps.setup()
 
   -- Modalità normale: esempio di mappa per chiudere la finestra
   vim.keymap.set('n', '<leader>q', ':q<CR>', { noremap = true, silent = false, desc = 'Quit' })
+
 end
 
 return keymaps
